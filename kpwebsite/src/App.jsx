@@ -1,9 +1,9 @@
-
+import hero from '../src/components/hero'
 function App() {
 
   return (
     <>
-  <h1>Kamand Prompt Website</h1>
+    <hero/>
     </>
   )
 }
