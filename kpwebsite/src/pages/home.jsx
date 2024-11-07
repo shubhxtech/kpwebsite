@@ -1,7 +1,7 @@
 import React from 'react'
 import HeroSection from '../components/hero'
 import Card from '../components/card'
-const home = () => {
+const Home = () => {
   return (
     <div className="bg-black min-h-screen" >
         <HeroSection />
@@ -19,4 +19,4 @@ const home = () => {
   )
 }
 
-export default home
+export default Home
