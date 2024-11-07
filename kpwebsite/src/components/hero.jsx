@@ -35,10 +35,10 @@ const HeroSection = () => {
       
       {/* Content */}
       <div className="relative z-10 text-center">
-        <h1 className="text-6xl font-bold text-white mb-4 animate-fadeIn">
+        <h1 className="text-8xl font-bold text-white mb-4 animate-fadeIn">
           &lt;Kamand Prompt/&gt;
         </h1>
-        <p className="text-gray-400 text-xl animate-slideUp">
+        <p className="text-gray-400 text-2xl animate-slideUp">
           &lt;Coding the future with Prompt/&gt;
         </p>
       </div>
