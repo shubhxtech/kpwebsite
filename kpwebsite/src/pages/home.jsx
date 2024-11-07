@@ -3,7 +3,7 @@ import HeroSection from '../components/hero'
 import Card from '../components/card'
 const home = () => {
   return (
-    <div className="bg-black min-h-screen">
+    <div className="bg-black min-h-screen" >
         <HeroSection />
         
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-8 justify-items-center">
@@ -11,7 +11,7 @@ const home = () => {
             <Card
               key={index}
               imageUrl="https://cc.iitmandi.co.in/assets/cc_core/_Luv_Sharma_IIT_Mandi.png"
-              name={`Member ${index + 1}`}
+              name={`Luv Sharma`}
             />
           ))}
         </div>
