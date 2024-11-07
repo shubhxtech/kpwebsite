@@ -1,25 +1,25 @@
 import React from 'react';
-import HeroSection from './components/hero.jsx';
-import Card from './components/card.jsx';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Header from './components/header';
+import Footer from './components/footer';
+import Home from './pages/home';
+import Gsoc from './pages/gsoc';
+import Teams from './pages/teams';
 
 function App() {
-  return (
-    <>
-      <div className="bg-black min-h-screen">
-        <HeroSection />
-        
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-8 justify-items-center">
-          {Array.from({ length: 16 }).map((_, index) => (
-            <Card
-              key={index}
-              imageUrl="https://cc.iitmandi.co.in/assets/cc_core/_Luv_Sharma_IIT_Mandi.png"
-              name={`Luv Sharma`}
-            />
-          ))}
-        </div>
-      </div>
-    </>
-  );
+    return (
+        <Router>
+            <Header /> {/* This will appear on every page */}
+            <div className="main-content">
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/gsoc" element={<Gsoc />} />
+                    <Route path="/teams" element={<Teams />} />
+                </Routes>
+            </div>
+            <Footer /> {/* This will also appear on every page */}
+        </Router>
+    );
 }
 
 export default App;
