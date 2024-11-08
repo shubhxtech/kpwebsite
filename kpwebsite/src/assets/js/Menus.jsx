@@ -8,11 +8,11 @@ export const QUICKLINKS = [
   ]
 
 export const Icons = [
-    { name: "facebook", link: "#" },
-    { name: "twitter", link: "#" },
-    { name: "github", link: "#" },
-    { name: "linkedin", link: "#" },
-    { name: "instagram", link: "#" },
+    { name: "logo-facebook", link: "#" },
+    { name: "logo-twitter", link: "#" },
+    { name: "logo-github", link: "#" },
+    { name: "logo-linkedin", link: "#" },
+    { name: "logo-instagram", link: "#" },
 ];
 
 export const CONTACT = [
