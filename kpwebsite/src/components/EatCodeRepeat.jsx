@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const EatCodeRepeat = () => {
   return (
-    <div className="w-full py-24 bg-black flex justify-center items-center">
+    <div className="w-full py-16 bg-black flex justify-center items-center">
       <motion.div
         className="text-white text-8xl font-bold relative"
         initial={{ opacity: 0.9 }}
