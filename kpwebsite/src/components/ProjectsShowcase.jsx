@@ -9,7 +9,7 @@ const ProjectShowcase = () => {
       tech: ["Python", "TensorFlow", "NLP", "Speech Recognition"],
       year: "2024",
       team: ["John Doe", "Jane Smith"],
-      image: "https://cdn.dribbble.com/userupload/8536182/file/original-8c24e383d9d9818a7a6e97d468655381.jpg?resize=400x0"
+      image: "https://s3-alpha.figma.com/hub/file/5400354372/19903ceb-4641-4892-9242-4e6e3094e446-cover.png"
     },
     {
       title: "Smart Campus App",
@@ -18,7 +18,7 @@ const ProjectShowcase = () => {
       tech: ["React Native", "Firebase", "Node.js"],
       year: "2023",
       team: ["Alice Johnson", "Bob Wilson"],
-      image: "https://cdn.dribbble.com/userupload/8536182/file/original-8c24e383d9d9818a7a6e97d468655381.jpg?resize=400x0"
+      image: "https://s3-alpha.figma.com/hub/file/5400354372/19903ceb-4641-4892-9242-4e6e3094e446-cover.png"
     },
     {
       title: "Automated Attendance System",
@@ -27,7 +27,7 @@ const ProjectShowcase = () => {
       tech: ["OpenCV", "Python", "Deep Learning"],
       year: "2023",
       team: ["Charlie Brown", "Diana Prince"],
-      image: "/api/placeholder/600/400"
+      image: "https://s3-alpha.figma.com/hub/file/5400354372/19903ceb-4641-4892-9242-4e6e3094e446-cover.png"
     },
     {
       title: "Campus Radio",
@@ -36,7 +36,7 @@ const ProjectShowcase = () => {
       tech: ["React", "WebRTC", "AWS"],
       year: "2024",
       team: ["Eve Anderson", "Frank Miller"],
-      image: "/api/placeholder/600/400"
+      image: "https://s3-alpha.figma.com/hub/file/5400354372/19903ceb-4641-4892-9242-4e6e3094e446-cover.png"
     }
   ];
 
@@ -53,7 +53,7 @@ const ProjectShowcase = () => {
     <div className="min-h-screen bg-black text-white p-8">
       {/* Header */}
       <div className="max-w-6xl mx-auto mb-12 text-center">
-        <h1 className="text-5xl pt-8 font-bold mb-4">Our Projects</h1>
+        <h1 className="text-5xl pt-8 font-bold mb-4 text-white">Our Projects</h1>
         <p className="text-gray-400 text-xl mb-8">Showcasing innovation and creativity through technology</p>
         
         {/* Category Filter */}
@@ -62,10 +62,10 @@ const ProjectShowcase = () => {
             <button
               key={category}
               onClick={() => setSelectedCategory(category)}
-              className={`px-6 py-2 rounded-full transition-all duration-300 ${
+              className={`px-6 py-2 rounded-full border transition-all duration-300 ${
                 selectedCategory === category
-                  ? 'bg-white text-black'
-                  : 'bg-white/50 text-black hover:bg-white/60'
+                  ? 'bg-white text-black border-white'
+                  : 'bg-transparent text-white border-white/30 hover:border-white'
               }`}
             >
               {category}
@@ -79,29 +79,29 @@ const ProjectShowcase = () => {
         {filteredProjects.map((project, index) => (
           <div
             key={project.title}
-            className="group relative bg-gray-900 rounded-xl overflow-hidden transform transition-all duration-300 hover:scale-[1.02]"
+            className="group relative bg-zinc-900 rounded-xl overflow-hidden transform transition-all duration-300 hover:scale-[1.02]"
             onMouseEnter={() => setHoveredProject(index)}
             onMouseLeave={() => setHoveredProject(null)}
           >
             <img
               src={project.image}
               alt={project.title}
-              className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+              className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110 opacity-75"
             />
             
-            <div className="absolute inset-0 bg-white/60 to-transparent">
+            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-transparent">
               <div className="absolute bottom-0 left-0 right-0 p-6">
                 <div className="flex justify-between items-start mb-4">
                   <div>
-                    <h3 className="text-xl font-bold mb-2">{project.title}</h3>
+                    <h3 className="text-xl font-bold mb-2 text-white">{project.title}</h3>
                     <span className="inline-block px-3 py-1 bg-white text-black text-sm rounded-full mb-2">
                       {project.category}
                     </span>
                   </div>
-                  <span className="text-black">{project.year}</span>
+                  <span className="text-gray-400">{project.year}</span>
                 </div>
                 
-                <p className={`text-black mb-4 transition-all duration-300 ${
+                <p className={`text-gray-300 mb-4 transition-all duration-300 ${
                   hoveredProject === index ? 'opacity-100' : 'opacity-0'
                 }`}>
                   {project.description}
@@ -114,7 +114,7 @@ const ProjectShowcase = () => {
                     {project.tech.map((tech) => (
                       <span
                         key={tech}
-                        className="px-2 py-1 bg-gray-800 text-xs rounded"
+                        className="px-2 py-1 bg-white/10 text-white text-xs rounded border border-white/20"
                       >
                         {tech}
                       </span>
@@ -124,7 +124,7 @@ const ProjectShowcase = () => {
                     {project.team.map((member, i) => (
                       <span
                         key={member}
-                        className="text-sm text-black"
+                        className="text-sm text-gray-400"
                       >
                         {member}{i < project.team.length - 1 ? "," : ""}
                       </span>
