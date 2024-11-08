@@ -110,7 +110,7 @@ const HeroSection = () => {
         className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${bg})` }}
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/80" />
+      {/* <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/80" /> */}
 
       {/* Floating Elements */}
       {floatingElements.map((element, index) => (
