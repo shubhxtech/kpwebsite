@@ -2,65 +2,52 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const EatCodeRepeat = () => {
-  return (
-    <div className="w-full py-16 bg-black flex justify-center items-center">
-      <motion.div
-        className="text-white text-8xl font-bold relative"
-        initial={{ opacity: 0.9 }}
-        animate={{
-          opacity: [1, 0.9, 1],
-          x: [0, -2, 2, -1, 0], // Subtle horizontal shift for a glitch effect
-          y: [0, -1, 1, -0.5, 0],
-        }}
-        transition={{
-          duration: 4,
-          repeat: Infinity,
-          repeatType: 'loop',
-          ease: 'easeInOut',
-        }}
-        whileHover={{
-          scale: 1.03,
-          textShadow: "0px 0px 8px rgba(255, 255, 255, 0.7)",
-        }}
-        style={{
-          textShadow: "0px 0px 4px rgba(255, 255, 255, 0.5)",
-        }}
-      >
-        <span style={{ position: "relative", zIndex: 2 }}>Eat. Code. Repeat.</span>
-        
-        {/* Adding glitch overlay lines */}
-        <motion.span
-          className="absolute inset-0 text-white opacity-20"
-          style={{ clipPath: "polygon(0 45%, 100% 45%, 100% 55%, 0 55%)" }}
-          animate={{
-            x: [-1, 1, -1, 0],
-            opacity: [0, 0.3, 0],
-          }}
-          transition={{
-            duration: 0.2,
-            repeat: Infinity,
-            repeatType: "mirror",
-          }}
-        >
-         Eat. Code. Repeat. 
-        </motion.span>
+  const text = "Eat. Code. Repeat.";
 
-        <motion.span
-          className="absolute inset-0 text-white opacity-20"
-          style={{ clipPath: "polygon(0 25%, 100% 25%, 100% 35%, 0 35%)" }}
-          animate={{
-            x: [1, -1, 1, 0],
-            opacity: [0, 0.4, 0],
-          }}
-          transition={{
-            duration: 0.15,
-            repeat: Infinity,
-            repeatType: "mirror",
-          }}
+  const typewriterVariants = {
+    hidden: { opacity: 1, width: 0 },
+    visible: {
+      opacity: 1,
+      width: "100%",
+      transition: {
+        duration: 2,
+        ease: "easeOut",
+        repeat: Infinity, // Loop the animation
+        repeatDelay: 1, // Pause before restarting
+      },
+    },
+  };
+
+  const cursorVariants = {
+    blink: {
+      opacity: [0, 1, 0],
+      transition: {
+        duration: 1,
+        repeat: Infinity,
+        ease: "linear",
+      },
+    },
+  };
+
+  return (
+    <div className="w-full py-8 sm:py-12 md:py-16 bg-black flex justify-center items-center">
+      <div className="relative text-center">
+        <motion.div
+          className="text-white text-3xl sm:text-5xl md:text-6xl lg:text-8xl font-bold whitespace-nowrap overflow-hidden"
+          initial="hidden"
+          animate="visible"
+          variants={typewriterVariants}
         >
-          Eat. Code. Repeat.
-        </motion.span>
-      </motion.div>
+          <span className="relative">
+            {text}
+            <motion.span
+              className="absolute -right-[4px] h-full w-[2px] bg-white" // Cursor without shadow
+              variants={cursorVariants}
+              animate="blink"
+            />
+          </span>
+        </motion.div>
+      </div>
     </div>
   );
 };
