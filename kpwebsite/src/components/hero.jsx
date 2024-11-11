@@ -1,5 +1,8 @@
 import React, { useEffect } from 'react';
 import bg from '../assets/bg.jpg';
+
+import DottedBackground from './dots';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
   faCode, faCodeBranch, faLaptopCode, 
@@ -104,12 +107,22 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <div className="relative h-screen w-full bg-black overflow-hidden">
+    <div className="relative h-screen w-full overflow-hidden">
+      
       {/* Background with Gradient Overlay */}
       <div 
         className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${bg})` }}
       />
+
+<div className="fixed left-0 top-0 inset-0 grid"
+        style={{
+          backgroundImage: 'radial-gradient(circle, #eeeeee 2px, transparent 2px)',
+          backgroundSize: '64px 64px',
+          backgroundAttachment: 'fixed',
+          opacity: 0.3
+        }}>
+      </div>
       {/* <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/80" /> */}
 
       {/* Floating Elements */}

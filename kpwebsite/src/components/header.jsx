@@ -16,6 +16,7 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 w-full bg-white shadow-md z-[100]">
+      
       <div className="max-w-6xl mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
           {/* Logo and Title */}
@@ -25,7 +26,6 @@ const Header = () => {
               Kamand Prompt
             </h1>
           </NavLink>
-
           {/* Desktop Navigation */}
           <nav className="hidden md:block">
             <ul className="flex space-x-8">

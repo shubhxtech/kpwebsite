@@ -50,8 +50,9 @@ const ProjectShowcase = () => {
     : projects.filter(project => project.category === selectedCategory);
 
   return (
-    <div className="min-h-screen bg-black text-white p-8">
+    <div className="min-h-screen text-white p-8">
       {/* Header */}
+      
       <div className="max-w-6xl mx-auto mb-12 text-center">
         <h1 className="text-5xl pt-8 font-bold mb-4 text-white">Our Projects</h1>
         <p className="text-gray-400 text-xl mb-8">Showcasing innovation and creativity through technology</p>
