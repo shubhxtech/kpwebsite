@@ -69,7 +69,14 @@ const Teams = () => {
   return (
     <div className="relative pt-16 h-full w-full bg-black overflow-hidden flex flex-col items-center justify-center">
       <div className="absolute inset-0 w-full h-screen bg-cover bg-center bg-no-repeat opacity-90" style={{ backgroundImage: `url(${bg})` }}/>
-      
+      <div className="fixed left-0 top-0 inset-0 grid"
+        style={{
+          backgroundImage: 'radial-gradient(circle, #eeeeee 2px, transparent 2px)',
+          backgroundSize: '64px 64px',
+          backgroundAttachment: 'fixed',
+          opacity: 0.3
+        }}>
+      </div>
       <div className='relative z-10 text-center pt-10'>
       <h1 className="text-8xl font-bold text-white mb-4 pb-8 animate-fadeIn">
           &lt;The Team /&gt;

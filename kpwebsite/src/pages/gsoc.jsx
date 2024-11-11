@@ -7,7 +7,14 @@ const gsoc = () => {
     <div className="relative bg-black">
       {/* Background image wrapper */}
       <div className="absolute inset-0 w-full h-screen bg-cover bg-center bg-no-repeat opacity-90" style={{ backgroundImage: `url(${bg})` }}/>
-
+      <div className="fixed left-0 top-0 inset-0 grid"
+        style={{
+          backgroundImage: 'radial-gradient(circle, #eeeeee 2px, transparent 2px)',
+          backgroundSize: '64px 64px',
+          backgroundAttachment: 'fixed',
+          opacity: 0.3
+        }}>
+      </div>
 
 
       {/* Content wrapper */}
@@ -32,7 +39,7 @@ const gsoc = () => {
           ))}
         </div>
 
-        <h2 className="text-7xl font-bold text-white bg-black text-center pt-20">
+        <h2 className="text-7xl font-bold text-white  text-center pt-20">
           2022
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 p-8 justify-items-center">
@@ -47,7 +54,7 @@ const gsoc = () => {
 
         {/* Repeat the same structure for 2021, 2020, 2019 */}
         
-        <h2 className="text-7xl font-bold text-white bg-black text-center pt-20">
+        <h2 className="text-7xl font-bold text-white text-center pt-20">
           2021 
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 p-8 justify-items-center">
@@ -60,7 +67,7 @@ const gsoc = () => {
           ))}
         </div>
 
-        <h2 className="text-7xl font-bold text-white bg-black text-center pt-20">
+        <h2 className="text-7xl font-bold text-white text-center pt-20">
           2020 
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 p-8 justify-items-center">
@@ -73,7 +80,7 @@ const gsoc = () => {
           ))}
         </div>
 
-        <h2 className="text-7xl font-bold text-white bg-black text-center pt-20">
+        <h2 className="text-7xl font-bold text-white  text-center pt-20">
           2019 
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 p-8 justify-items-center">

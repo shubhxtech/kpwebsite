@@ -26,7 +26,14 @@ const Contact = () => {
   return (
     <>
     <div className="py-24 absolute inset-0 w-full h-screen bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${bg})` }}/>
-
+    <div className="fixed left-0 top-0 inset-0 grid"
+        style={{
+          backgroundImage: 'radial-gradient(circle, #eeeeee 2px, transparent 2px)',
+          backgroundSize: '64px 64px',
+          backgroundAttachment: 'fixed',
+          opacity: 0.3
+        }}>
+      </div>
     <div className="min-h-screen  text-white flex items-center justify-center px-4 py-12">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-5xl z-10">
         {/* Left side: Contact Form */}
