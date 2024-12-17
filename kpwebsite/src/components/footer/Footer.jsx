@@ -1,14 +1,14 @@
 import React from 'react';
 import { faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import logo from '../../assets/logo.svg'; 
+import logo from '../../assets/logo.svg';
 
 function Footer() {
   return (
     <footer className="bg-gray-100 text-gray-700 pt-8 sm:pt-16">
       <div className="container mx-auto px-4">
         {/* Main Footer Content */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12 mx-16">
           {/* Logo Section */}
           <div className="flex flex-col items-center sm:items-start">
             <img src={logo} alt="Programming Club Logo" className="h-16 mb-4" />
@@ -18,7 +18,7 @@ function Footer() {
           </div>
 
           {/* Quick Links */}
-          <div className="text-center sm:text-left">
+          <div className="text-center sm:text-left mx-10">
             <h3 className="font-extrabold text-xl mb-4">Quick Links</h3>
             <ul className="space-y-3">
               {['HOME', 'GSOC', 'EVENTS', 'CONTACT'].map((link) => (
@@ -35,7 +35,7 @@ function Footer() {
           </div>
 
           {/* Contact Us */}
-          <div className="text-center sm:text-left">
+          <div className="text-center sm:text-left mx-10">
             <h3 className="font-extrabold text-xl mb-4">Contact Us</h3>
             <div className="space-y-3">
               <p className="flex items-center justify-center sm:justify-start space-x-2">
@@ -55,7 +55,7 @@ function Footer() {
           </div>
 
           {/* Follow Us */}
-          <div className="text-center sm:text-left">
+          <div className="text-center sm:text-left mx-10">
             <h3 className="font-extrabold text-xl mb-4">Follow us</h3>
             <div className="space-y-3">
               <p className="flex items-center justify-center sm:justify-start space-x-2">
@@ -76,15 +76,15 @@ function Footer() {
 
 
       </div>
-              {/* Copyright */}
-              <div className="bg-gray-200 w-full py-6 sm:py-8 mt-8 sm:mt-16 -mx-4">
-          <p className="text-md text-gray-600 text-center">
-            © 2024 Kammand Prompt{' '}
-            <a href="https://iitmandi.ac.in" className="hover:text-gray-900 hover:underline font-semibold">
-              IIT Mandi
-            </a>
-          </p>
-        </div>
+      {/* Copyright */}
+      <div className="bg-gray-200 py-6 sm:py-8 mt-8 sm:mt-16">
+        <p className="text-md text-gray-600 text-center">
+          © 2024 Kammand Prompt{' '}
+          <a href="https://iitmandi.ac.in" className="hover:text-gray-900 hover:underline font-semibold">
+            IIT Mandi
+          </a>
+        </p>
+      </div>
     </footer>
   );
 }
