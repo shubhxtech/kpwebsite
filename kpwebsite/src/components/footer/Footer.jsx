@@ -2,6 +2,7 @@ import React from 'react';
 import { faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import logo from '../../assets/logo.svg';
+import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
@@ -21,14 +22,14 @@ function Footer() {
           <div className="text-center sm:text-left mx-10">
             <h3 className="font-extrabold text-xl mb-4">Quick Links</h3>
             <ul className="space-y-3">
-              {['HOME', 'GSOC', 'EVENTS', 'CONTACT'].map((link) => (
+              {['HOME', 'GSOC', 'TEAMS', 'CONTACT'].map((link) => (
                 <li key={link}>
-                  <a
-                    href={`#${link.toLowerCase()}`}
+                  <Link
+                    to={`${link.toLowerCase()}`}
                     className="relative font-medium transition-colors hover:text-gray-900 before:content-['</'] after:content-['>'] before:opacity-0 after:opacity-0 hover:before:opacity-100 hover:after:opacity-100 before:transition-opacity before:duration-300 after:transition-opacity after:duration-300 before:mr-1 after:ml-1"
                   >
                     {link}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

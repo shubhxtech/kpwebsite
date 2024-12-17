@@ -15,6 +15,7 @@ function App() {
             <Header />
             <div className="main-content">
                 <Routes>
+                    <Route path="/home" element={<Home />} />
                     <Route path="/" element={<Home />} />
                     <Route path="/gsoc" element={<Gsoc />} />
                     <Route path="/teams" element={<Teams />} />

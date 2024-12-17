@@ -45,9 +45,9 @@ const SocialIcon = ({ icon, name, link }) => (
 
 const HeroSection = () => {
   const socialIcons = [
-    { icon: faGithub, name: 'Follow on GitHub', link: '#' },
-    { icon: faInstagram, name: 'Follow on Instagram', link: '#' },
-    { icon: faLinkedin, name: 'Connect on LinkedIn', link: '#' },
+    { icon: faGithub, name: 'Follow on GitHub', link: 'https://github.com/KamandPrompt' },
+    { icon: faInstagram, name: 'Follow on Instagram', link: 'https://www.instagram.com/kamandprompt/' },
+    { icon: faLinkedin, name: 'Connect on LinkedIn', link: 'https://www.linkedin.com/company/programming-club-iit-mandi/posts/?feedView=all' },
   ];
   const floatingElements = [
     // Top row
@@ -147,11 +147,15 @@ const HeroSection = () => {
         </p>
         
         {/* CTA Button */}
-        <button className="mt-8 px-8 py-3 bg-white
-          rounded-full text-black font-semibold hover:scale-105 transition-transform 
-          duration-300 animate-pulse">
-          Join Our Community
-        </button>
+        <button
+  onClick={() => window.open("https://www.instagram.com/kamandprompt/", "_blank")}
+  className="mt-8 px-8 py-3 bg-white
+    rounded-full text-black font-semibold hover:scale-105 transition-transform 
+    duration-300 animate-pulse"
+>
+  Join Our Community
+</button>
+
       </div>
 
       {/* Social Icons */}

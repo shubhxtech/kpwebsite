@@ -75,7 +75,7 @@ const Contact = () => {
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
-                className="w-full px-4 py-2  rounded-md focus:ring-2 focus:ring-white focus:outline-none"
+                className="w-full text-black px-4 py-2  rounded-md focus:ring-2 focus:ring-white focus:outline-none"
                 rows="5"
                 placeholder="Your Message"
                 required 
@@ -94,7 +94,7 @@ const Contact = () => {
         {/* Right side: Profile */}
         <div className="flex flex-col items-center justify-center text-center space-y-4 p-8 rounded-lg shadow-lg">
           <img
-            src="https://cc.iitmandi.co.in/assets/cc_core/_Luv_Sharma_IIT_Mandi.png" // Replace with your image URL
+            src="./src/assets/teamphoto/abhijheetjha.jpeg" // Replace with your image URL
             alt="Profile"
             className="w-32 h-32 rounded-full object-cover mb-4 border-white border-4"
           />
