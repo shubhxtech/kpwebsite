@@ -7,11 +7,14 @@ import Gsoc from '../src/pages/gsoc';
 import Teams from '../src/pages/teams';
 import Contact from './pages/contact';
 import Blogs from './pages/blogs';
+import ScrollToTop from './components/ScrollToTop';
 import BlogDetail from './pages/blog/[slug]';
+import ProjectDetail from './pages/projects/[slug]'
 
 function App() {
     return (
         <Router>
+            <ScrollToTop />
             <Header />
             <div className="main-content">
                 <Routes>
@@ -22,6 +25,7 @@ function App() {
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/blogs" element={<Blogs />} />
                     <Route path="/blog/:slug" element={<BlogDetail />} />
+                    <Route path="/projects/:slug" element={<ProjectDetail />} />
                 </Routes>
             </div>
             <Footer />
