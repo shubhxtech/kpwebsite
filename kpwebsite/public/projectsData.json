@@ -1,0 +1,39 @@
+[
+    {
+      "title": "AI Voice Assistant",
+      "category": "Artificial Intelligence",
+      "description": "A smart voice assistant powered by machine learning that can understand and respond to natural language commands.",
+      "tech": ["Python", "TensorFlow", "NLP", "Speech Recognition"],
+      "year": "2024",
+      "team": ["John Doe", "Jane Smith"],
+      "image": "https://s3-alpha.figma.com/hub/file/5400354372/19903ceb-4641-4892-9242-4e6e3094e446-cover.png"
+    },
+    {
+      "title": "Smart Campus App",
+      "category": "Mobile Development",
+      "description": "A comprehensive mobile application that helps students navigate campus life with features like attendance tracking and mess menu.",
+      "tech": ["React Native", "Firebase", "Node.js"],
+      "year": "2023",
+      "team": ["Alice Johnson", "Bob Wilson"],
+      "image": "https://s3-alpha.figma.com/hub/file/5400354372/19903ceb-4641-4892-9242-4e6e3094e446-cover.png"
+    },
+    {
+      "title": "Automated Attendance System",
+      "category": "Computer Vision",
+      "description": "Face recognition-based attendance system that automatically marks attendance using security camera feeds.",
+      "tech": ["OpenCV", "Python", "Deep Learning"],
+      "year": "2023",
+      "team": ["Charlie Brown", "Diana Prince"],
+      "image": "https://s3-alpha.figma.com/hub/file/5400354372/19903ceb-4641-4892-9242-4e6e3094e446-cover.png"
+    },
+    {
+      "title": "Campus Radio",
+      "category": "Web Development",
+      "description": "Online radio station platform for campus announcements and student-run shows.",
+      "tech": ["React", "WebRTC", "AWS"],
+      "year": "2024",
+      "team": ["Eve Anderson", "Frank Miller"],
+      "image": "https://s3-alpha.figma.com/hub/file/5400354372/19903ceb-4641-4892-9242-4e6e3094e446-cover.png"
+    }
+  ]
+  
