@@ -1,0 +1,254 @@
+{
+    "years": [
+            {
+      "year": "2024",
+      "selections": [
+        {
+          "name": "Shivam Jaiswal (B22130)",
+          "imageUrl": "img/people/Shivam Jaiswal.jpeg"
+        },
+        {
+          "name": "Rudra Pratap Singh (B22126)",
+          "imageUrl": "img/people/Rudra Pratap Singh.jpeg"
+        },
+        {
+          "name": "Biswadeep Purkayastha (B21041)",
+          "imageUrl": "img/people/Biswadeep Purkayastha.jpeg"
+        },
+        {
+          "name": "Kaushik Vishwakarma (B21145)",
+          "imageUrl": "img/people/Kaushik Vishwakarma.jpeg"
+        },
+        {
+          "name": "Akarshan Kapoor (B21003)",
+          "imageUrl": "img/people/Akarshan Kapoor.jpeg"
+        },
+        {
+          "name": "Khushagra Sharma (B20251)",
+          "imageUrl": "img/people/Khushagra Sharma.jpeg"
+        },
+        {
+          "name": "Arun Patwa (B20184)",
+          "imageUrl": "img/people/Arun Patwa.jpeg"
+        },
+        {
+          "name": "Ankit Pal Singh (B20181)",
+          "imageUrl": "img/people/Ankit Pal Singh.jpeg"
+        },
+        {
+          "name": "Pushpendra Kumar (B20122)",
+          "imageUrl": "img/people/Pushpendra Kumar.jpeg"
+        }
+      ]
+    },
+    {
+      "year": "2023",
+      "selections": [
+        {
+          "name": "Mohit Verma",
+          "imageUrl": "img/people/Mohit Verma.jpeg"
+        },
+        {
+          "name": "Pushpender Chaudhary",
+          "imageUrl": "img/people/Pushpender Chaudhary.jpeg"
+        },
+        {
+          "name": "Yuvraj Aseri",
+          "imageUrl": "img/people/Yuvraj Aseri.jpeg"
+        },
+        {
+          "name": "Gayatri",
+          "imageUrl": "img/people/Gayatri.jpeg"
+        },
+        {
+          "name": "Kushagra Sharma",
+          "imageUrl": "img/people/Khushagra Sharma.jpeg"
+        },
+        {
+          "name": "Pratyush Ranjan",
+          "imageUrl": "img/people/Pratyush Ranjan.jpeg"
+        },
+        {
+          "name": "Aakarshan",
+          "imageUrl": "img/people/Akarshan Kapoor.jpeg"
+        },
+        {
+          "name": "Pratham Gupta",
+          "imageUrl": "img/people/Pratham Gupta.jpeg"
+        },
+        {
+          "name": "Dipam Turkar",
+          "imageUrl": "img/people/Dipam Turkar.jpeg"
+        }
+      ]
+    },
+      {
+        "year": "2021",
+        "selections": [
+          {
+            "name": "Priyam Seth",
+            "imageUrl": "img/people/Priyam seth.jpeg"
+          },
+          {
+            "name": "Divyasheel Kumar",
+            "imageUrl": "img/people/Divyasheel.jpeg"
+          },
+          {
+            "name": "Pranshu Kharkwal",
+            "imageUrl": "img/people/Pranshu.jpeg"
+          },
+          {
+            "name": "Nippun Sharma",
+            "imageUrl": "img/people/Nippun.jpeg"
+          },
+          {
+            "name": "Suraj Kulriya",
+            "imageUrl": "img/people/suraj Kulriya.jpeg"
+          },
+          {
+            "name": "Chandan Prakash",
+            "imageUrl": "img/people/Chandan.jpeg"
+          },
+          {
+            "name": "Sarthak Garg",
+            "imageUrl": "img/people/Sarthak garg.jpeg"
+          },
+          {
+            "name": "Rahul Saini",
+            "imageUrl": "img/people/Rahul saini.jpeg"
+          },
+          {
+            "name": "Naveen Sai",
+            "imageUrl": "img/people/Naveen Sai.jpeg"
+          },
+          {
+            "name": "Shardul Semwal",
+            "imageUrl": "img/people/Shardul Semwal.jpeg"
+          },
+          {
+            "name": "Rishabh Garg",
+            "imageUrl": "img/people/Rishabh Garg.jpeg"
+          },
+          {
+            "name": "Bhavna Kosta",
+            "imageUrl": "img/people/Bhavna Kosta.jpeg"
+          }
+        ]
+      },
+      {
+        "year": "2020",
+        "selections": [
+          {
+            "name": "Abhijeet Manhas",
+            "imageUrl": "img/people/abhijeetmanhas.jpeg"
+          },
+          {
+            "name": "Ankit Karan",
+            "imageUrl": "img/people/ankitkaran.jpg"
+          },
+          {
+            "name": "Ashutosh Sharma",
+            "imageUrl": "img/people/ashutoshsharma.jpg"
+          },
+          {
+            "name": "Jai Luthra",
+            "imageUrl": "img/people/jailuthra.jpeg"
+          },
+          {
+            "name": "Kartik Kathuria",
+            "imageUrl": "img/people/kartikkathuria.jpeg"
+          },
+          {
+            "name": "Keshav Garg",
+            "imageUrl": "img/people/keshavgarg.jpeg"
+          },
+          {
+            "name": "Manav Mehta",
+            "imageUrl": "img/people/manavmehta.jpeg"
+          },
+          {
+            "name": "Sambhav Dusad",
+            "imageUrl": "img/people/sambhavdusad.jpeg"
+          },
+          {
+            "name": "Suryavanshi Virendrasingh",
+            "imageUrl": "img/people/suryavanshi_virendrasingh.jpg"
+          }
+        ]
+      },
+      {
+        "year": "2019",
+        "selections": [
+          {
+            "name": "Vipul Sharma",
+            "imageUrl": "img/people/vipulsharma.jpg"
+          },
+          {
+            "name": "Dheeraj Yadav",
+            "imageUrl": "img/people/dheerajyadav.jpeg"
+          },
+          {
+            "name": "Sharad Shukla",
+            "imageUrl": "img/people/sharadshukla.jpg"
+          },
+          {
+            "name": "Prajjwal Jha",
+            "imageUrl": "img/people/prajjwaljha.jpg"
+          },
+          {
+            "name": "Gaurav Kumar",
+            "imageUrl": "img/people/gauravkumar.jpg"
+          }
+        ]
+      },
+      {
+        "year": "2018",
+        "selections": [
+          {
+            "name": "Abhijeet Sharma",
+            "imageUrl": "img/people/abhijeetsharma.jpg"
+          },
+          {
+            "name": "Akash Sharma",
+            "imageUrl": "img/people/akashsharma.jpg"
+          },
+          {
+            "name": "Aksh Gautam",
+            "imageUrl": "img/people/akshgautam.jpeg"
+          },
+          {
+            "name": "Sagar Gupta",
+            "imageUrl": "img/people/sagargupta.jpg"
+          },
+          {
+            "name": "Priyanshu Khandelwal",
+            "imageUrl": "img/people/priyanshukhandelwal.jpg"
+          },
+          {
+            "name": "Sahil Yadav",
+            "imageUrl": "img/people/sahilyadav.jpg"
+          },
+          {
+            "name": "Swapnil Sharma",
+            "imageUrl": "img/people/swapnilsharma2.jpg"
+          },
+          {
+            "name": "Abhigyan Khaund",
+            "imageUrl": "img/people/abhigyankhaund.jpg"
+          },
+          {
+            "name": "Chirag Vashisht",
+            "imageUrl": "img/people/chiragvashist.jpg"
+          },
+          {
+            "name": "Lakshay Arora",
+            "imageUrl": "img/people/lakshayarora.jpg"
+          },
+          {
+            "name": "Sahil Arora",
+            "imageUrl": "img/people/sahilarora.jpg"
+          }
+        ]
+      }
+    ]
+  }

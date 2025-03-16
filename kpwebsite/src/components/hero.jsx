@@ -136,7 +136,7 @@ const HeroSection = () => {
       ))}
 
       {/* Main Content */}
-      <div className="relative z-10 h-full flex flex-col items-center justify-center px-4">
+      <div className="relative z-1 h-full flex flex-col items-center justify-center px-4">
         <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold  bg-clip-text 
           text-white mb-4 animate-fadeIn text-center">
           &lt;Kamand Prompt/&gt;
@@ -159,7 +159,7 @@ const HeroSection = () => {
       </div>
 
       {/* Social Icons */}
-      <div className="fixed left-4 top-1/2 -translate-y-1/2 flex flex-col gap-4 z-20">
+      {/* <div className="fixed left-4 top-1/2 -translate-y-1/2 flex flex-col gap-4 z-2">
         {socialIcons.map((iconObj, index) => (
           <SocialIcon 
             key={iconObj.name}
@@ -168,7 +168,7 @@ const HeroSection = () => {
             link={iconObj.link}
           />
         ))}
-      </div>
+      </div> */}
 
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">

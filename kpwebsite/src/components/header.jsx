@@ -29,7 +29,7 @@ const Header = () => {
           {/* Desktop Navigation */}
           <nav className="hidden md:block">
             <ul className="flex space-x-8">
-              {['gsoc', 'teams', 'blogs', 'contact'].map((item) => (
+              {['home', 'gsoc', 'teams', 'contact'].map((item) => (
                 <li key={item}>
                   <NavLink
                     to={`/${item}`}

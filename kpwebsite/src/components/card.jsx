@@ -4,7 +4,7 @@ import { faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const Card = ({ imageUrl, name, linkedin, instagram }) => {
   return (
-    <div className="w-[300px] h-[350px] relative overflow-hidden transition-transform transform hover:scale-105 shadow-lg hover:shadow-xl duration-300 ease-in-out rounded-2xl bg-gradient-to-b from-white to-gray-50">
+    <div className="w-full max-w-[300px] sm:max-w-[350px] md:max-w-[400px] h-[350px] relative overflow-hidden transition-transform transform hover:scale-105 shadow-lg hover:shadow-xl duration-300 ease-in-out rounded-2xl bg-gradient-to-b from-white to-gray-50">
       {/* Profile Image */}
       <img
         src={imageUrl}
@@ -13,9 +13,9 @@ const Card = ({ imageUrl, name, linkedin, instagram }) => {
       />
       
       {/* Details Container */}
-      <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 w-[90%] h-[80px] bg-white shadow-md flex flex-col items-center justify-center rounded-lg transition-transform duration-300 ease-in-out p-2">
+      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 w-[90%] sm:w-[85%] h-auto py-3 bg-white shadow-md flex flex-col items-center justify-center rounded-lg transition-transform duration-300 ease-in-out p-2">
         {/* Name */}
-        <div className="text-center text-black font-serif font-bold text-lg leading-snug transition-all duration-300 ease-in-out">
+        <div className="text-center text-black font-serif font-bold text-lg sm:text-xl leading-snug transition-all duration-300 ease-in-out">
           {name}
         </div>
 
@@ -31,7 +31,7 @@ const Card = ({ imageUrl, name, linkedin, instagram }) => {
             >
               <FontAwesomeIcon
                 icon={faInstagram}
-                className="w-[24px] h-[24px] text-black hover:text-gray-700 transition-colors duration-300"
+                className="w-5 h-5 sm:w-6 sm:h-6 text-black hover:text-gray-700 transition-colors duration-300"
               />
             </a>
           )}
@@ -45,7 +45,7 @@ const Card = ({ imageUrl, name, linkedin, instagram }) => {
             >
               <FontAwesomeIcon
                 icon={faLinkedin}
-                className="w-[24px] h-[24px] text-black hover:text-gray-700 transition-colors duration-300"
+                className="w-5 h-5 sm:w-6 sm:h-6 text-black hover:text-gray-700 transition-colors duration-300"
               />
             </a>
           )}

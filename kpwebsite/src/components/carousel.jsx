@@ -3,24 +3,24 @@ import React, { useState, useEffect } from 'react';
 const ModernCarousel = () => {
   const slides = [
     {
-      url: 'https://students.iitmandi.ac.in/main/studentLife/images/studentLife/SL10.jpg',
-      title: 'Campus View',
-      description: 'Beautiful campus surroundings'
+      url: 'img/1.jpg',
+      title: 'Mock OA For Second Year',
+      description: ''
     },
     {
-      url: 'https://students.iitmandi.ac.in/main/studentLife/images/studentLife/SL10.jpg',
-      title: 'Academic Block',
-      description: 'State-of-the-art facilities'
+      url: 'img/2.jpg',
+      title: 'Inter-IIT BootCamp',
+      description: ''
     },
     {
-      url: 'https://cc.iitmandi.co.in/_next/image?url=%2Fassets%2Fimages%2Fcampus.jpeg&w=1920&q=75',
-      title: 'Research Lab',
-      description: 'Advanced research facilities'
+      url: 'img/3.jpg',
+      title: 'BlockChain Session',
+      description: ''
     },
     {
-      url: 'https://students.iitmandi.ac.in/main/studentLife/images/studentLife/SL10.jpg',
-      title: 'Library',
-      description: 'Modern learning environment'
+      url: 'img/4.jpg',
+      title: 'CP-101 For Second Year',
+      description: ''
     },
     {
       url: 'https://cc.iitmandi.co.in/_next/image?url=%2Fassets%2Fimages%2Fcampus.jpeg&w=1920&q=75',
